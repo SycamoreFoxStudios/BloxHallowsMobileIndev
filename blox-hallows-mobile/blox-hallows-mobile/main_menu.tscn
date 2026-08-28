@@ -84,6 +84,7 @@ offset_bottom = 720.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_fu7sn")
 
 [node name="IntroText" type="Label" parent="." unique_id=1578117460]
+z_index = 1
 layout_mode = 0
 offset_left = 430.0
 offset_top = 340.0
