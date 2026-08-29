@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xj6ve8wdx5wv"
-path="res://.godot/imported/BH_apple_Logo.png-e5221437f16d9bc54d786d3cb89f8408.ctex"
+uid="uid://bk128f1f8gfj3"
+path="res://.godot/imported/BH_apple_LOGO.png-60d02f6e7a1f422badb13713840e9aa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Logos/BH_apple_Logo.png"
-dest_files=["res://.godot/imported/BH_apple_Logo.png-e5221437f16d9bc54d786d3cb89f8408.ctex"]
+source_file="res://Logos/BH_apple_LOGO.png"
+dest_files=["res://.godot/imported/BH_apple_LOGO.png-60d02f6e7a1f422badb13713840e9aa4.ctex"]
 
 [params]
 
