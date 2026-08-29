@@ -3,14 +3,13 @@ var MenuScreen = "Play"
 signal startgame
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$AnimationPlayer.play("SplashScreen")
-
+	if size.x > size.y:
+		$AnimationPlayer.play("SplashScreen")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
 	var size = get_viewport().get_visible_rect().size
-
 	if size.x > size.y:
 		$"Rotation Warning".visible = false
 	else:
