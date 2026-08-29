@@ -103,10 +103,10 @@ libraries/ = SubResource("AnimationLibrary_fu7sn")
 [node name="Button" type="Button" parent="." unique_id=490483620]
 z_index = 3
 layout_mode = 0
-offset_left = 816.0
-offset_top = 114.0
-offset_right = 993.0
-offset_bottom = 200.0
+offset_left = 26.0
+offset_top = 34.0
+offset_right = 1250.0
+offset_bottom = 686.0
 text = "Fullscreen"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
