@@ -14,14 +14,19 @@ config/name="BloxHallows Mobile"
 config/version="0.01"
 run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="uid://dmqo2a5of6q24"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/borderless=true
+window/size/transparent=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/per_pixel_transparency/allowed=true
 
 [physics]
 
