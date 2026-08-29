@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dsy31ynwpyg5g" path="res://main_menu.gd" id="1_7vrkn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.9741294, 0.0005914307, 0.94076115, 1)
 
 [sub_resource type="Animation" id="Animation_06t4h"]
 length = 0.001
@@ -76,8 +77,6 @@ grow_vertical = 2
 script = ExtResource("1_7vrkn")
 
 [node name="Black Background" type="Panel" parent="." unique_id=966581798]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
