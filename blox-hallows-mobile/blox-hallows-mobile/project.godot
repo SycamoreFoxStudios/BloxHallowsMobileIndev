@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="BloxHallows Mobile"
+config/version="0.01"
 run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://dmqo2a5of6q24"
 
 [display]
 
