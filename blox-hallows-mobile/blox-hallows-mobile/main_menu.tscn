@@ -101,6 +101,7 @@ vertical_alignment = 1
 libraries/ = SubResource("AnimationLibrary_fu7sn")
 
 [node name="Button" type="Button" parent="." unique_id=490483620]
+z_index = 3
 layout_mode = 0
 offset_left = 476.0
 offset_top = 101.0
