@@ -12,9 +12,9 @@ func _process(delta: float) -> void:
 	var size = get_viewport().get_visible_rect().size
 
 	if size.x > size.y:
-		$PanelContainer.visible = false
+		$"Rotation Warning".visible = false
 	else:
-		$PanelContainer.visible = true
+		$"Rotation Warning".visible = true
 	
 	
 	
