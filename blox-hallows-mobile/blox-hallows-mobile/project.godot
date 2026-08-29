@@ -18,6 +18,10 @@ boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://bk128f1f8gfj3"
 config/icon="uid://bk128f1f8gfj3"
 
+[autoload]
+
+Global="*uid://dlhireyakoba5"
+
 [display]
 
 window/size/viewport_width=1280
@@ -27,6 +31,10 @@ window/size/transparent=true
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/per_pixel_transparency/allowed=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/virtual_joystick_DX/plugin.cfg")
 
 [physics]
 
