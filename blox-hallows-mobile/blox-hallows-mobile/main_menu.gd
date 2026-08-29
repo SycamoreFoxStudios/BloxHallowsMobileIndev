@@ -48,3 +48,11 @@ func _on_start_game_button_down() -> void:
 	startgame.emit()
 	$AnimationPlayer.play("StartGame")
 	
+
+
+func _on_item_list_item_selected(index: int) -> void:
+	var item_name = $ItemList.get_item_text(index)
+	if item_name == "Default":
+		Global.player_skin = "default"
+	if item_name == "Pumpkin":
+		Global.player_skin = "pumpkin"

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cc1uop0wrhfix"]
+
+[ext_resource type="Script" uid="uid://syrko1w207pi" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cjkro4be5kdph" path="res://Player/Player_1.png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://64n1nphun7yx" path="res://Player/Player_1_Hand.png" id="3_i3pqv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qlpxl"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1896002904]
+script = ExtResource("1_4flbx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=128507037]
+texture = ExtResource("2_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=673775999]
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_qlpxl")
+
+[node name="Left Hand" type="Sprite2D" parent="." unique_id=1095687332]
+position = Vector2(55, -55)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_i3pqv")
+
+[node name="Right Hand" type="Sprite2D" parent="." unique_id=1396196998]
+position = Vector2(55, 55)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_i3pqv")
