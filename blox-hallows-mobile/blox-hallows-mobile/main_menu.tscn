@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dsy31ynwpyg5g" path="res://main_menu.gd" id="1_7vrkn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
-bg_color = Color(0.9741294, 0.0005914307, 0.94076115, 1)
+bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_06t4h"]
 length = 0.001
