@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://bp30orkgaogvg" path="res://Player/player_brown.png" id="6_qe12f"]
 [ext_resource type="Texture2D" uid="uid://dhtl7k3e62peu" path="res://Player/player_pumpkin.png" id="7_8qtwp"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2juy3"]
+bg_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
 bg_color = Color(0.3854925, 0.38549247, 0.38549247, 1)
 
@@ -159,6 +162,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7vrkn")
+
+[node name="Rotation Warning" type="PanelContainer" parent="." unique_id=1803810235]
+visible = false
+layout_mode = 0
+offset_right = 1281.0
+offset_bottom = 1842.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2juy3")
+
+[node name="Label" type="Label" parent="Rotation Warning" unique_id=1640619344]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Please Rotate Your Device"
+horizontal_alignment = 1
 
 [node name="Background" type="Panel" parent="." unique_id=378110669]
 z_index = -3
