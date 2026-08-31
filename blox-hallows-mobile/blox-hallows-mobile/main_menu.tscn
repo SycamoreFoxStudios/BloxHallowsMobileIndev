@@ -161,6 +161,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7vrkn")
 
+[node name="Player" parent="." unique_id=1896002904 instance=ExtResource("6_nlkkf")]
+z_index = 1
+position = Vector2(300, 447)
+scale = Vector2(2.545, 2.545)
+
 [node name="Black Cover" type="Panel" parent="." unique_id=966581798]
 visible = false
 z_index = 3
@@ -278,11 +283,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Please Rotate Your Device"
 horizontal_alignment = 1
-
-[node name="Player" parent="." unique_id=1896002904 instance=ExtResource("6_nlkkf")]
-z_index = 1
-position = Vector2(300, 452)
-scale = Vector2(2.545, 2.545)
 
 [connection signal="button_down" from="Start Game" to="." method="_on_start_game_button_down"]
 [connection signal="button_down" from="Customize" to="." method="_on_customize_button_down"]

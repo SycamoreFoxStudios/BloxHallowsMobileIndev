@@ -34,7 +34,11 @@ window/per_pixel_transparency/allowed=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/virtual_joystick_DX/plugin.cfg")
+enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg", "res://addons/virtual_joystick_DX/plugin.cfg")
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 

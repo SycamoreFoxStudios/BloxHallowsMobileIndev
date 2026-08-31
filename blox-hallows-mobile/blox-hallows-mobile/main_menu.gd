@@ -1,10 +1,10 @@
 extends Control
 var MenuScreen = "Play"
 signal startgame
+var opening_played = "no"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if size.x > size.y:
-		$AnimationPlayer.play("SplashScreen")
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -12,6 +12,9 @@ func _process(delta: float) -> void:
 	var size = get_viewport().get_visible_rect().size
 	if size.x > size.y:
 		$"Rotation Warning".visible = false
+		if opening_played == "no":
+			$AnimationPlayer.play("SplashScreen")
+			opening_played ="yes"
 	else:
 		$"Rotation Warning".visible = true
 	
@@ -46,6 +49,7 @@ func _on_customize_button_down() -> void:
 func _on_start_game_button_down() -> void:
 	startgame.emit()
 	$AnimationPlayer.play("StartGame")
+	get_tree().change_scene_to_file("res://gameplay.tscn")
 	
 
 
