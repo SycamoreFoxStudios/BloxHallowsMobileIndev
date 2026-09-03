@@ -12,7 +12,7 @@ config_version=5
 
 config/name="BloxHallows Mobile"
 config/version="0.01"
-run/main_scene="res://main_menu.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://bk128f1f8gfj3"

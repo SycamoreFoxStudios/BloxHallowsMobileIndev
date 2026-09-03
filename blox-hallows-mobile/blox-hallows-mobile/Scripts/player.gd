@@ -1,7 +1,5 @@
 extends CharacterBody2D
-
 const SPEED = 300.0
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -21,12 +19,13 @@ func _process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
-	move_and_slide()
+	#move_and_slide()
 	
 	var lookdirection = Input.get_vector("lookleft", "lookright", "lookup", "lookdown")
 	if lookdirection:
 		rotation = lookdirection.angle()
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.y = move_toward(velocity.y, 0, SPEED)
 	move_and_slide()
+
+
+func _on_right_virtual_joystick_pressed() -> void:
+	Global.shoot.emit()

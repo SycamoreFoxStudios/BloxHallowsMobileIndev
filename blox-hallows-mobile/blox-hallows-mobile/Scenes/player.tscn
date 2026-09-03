@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cc1uop0wrhfix"]
 
-[ext_resource type="Script" uid="uid://syrko1w207pi" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://syrko1w207pi" path="res://Scripts/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://cjkro4be5kdph" path="res://Player/Player_1.png" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://64n1nphun7yx" path="res://Player/Player_1_Hand.png" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://nlvgb7kav48k" path="res://Scenes/weapon.tscn" id="4_vgqql"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qlpxl"]
 
@@ -25,3 +26,8 @@ texture = ExtResource("3_i3pqv")
 position = Vector2(55, 55)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_i3pqv")
+
+[node name="PlayerAnimations" type="AnimationPlayer" parent="." unique_id=1906165115]
+root_node = NodePath("../Left Hand")
+
+[node name="Weapon" parent="." unique_id=215411997 instance=ExtResource("4_vgqql")]

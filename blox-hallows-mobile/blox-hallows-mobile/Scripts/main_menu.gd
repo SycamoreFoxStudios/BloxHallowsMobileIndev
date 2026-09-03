@@ -49,7 +49,7 @@ func _on_customize_button_down() -> void:
 func _on_start_game_button_down() -> void:
 	startgame.emit()
 	$AnimationPlayer.play("StartGame")
-	get_tree().change_scene_to_file("res://gameplay.tscn")
+	get_tree().change_scene_to_file("res://Scenes/gameplay.tscn")
 	
 
 

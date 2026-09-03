@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://nlvgb7kav48k"]
+
+[ext_resource type="Script" uid="uid://c3n6yc3ed8hn" path="res://Scripts/weapon.gd" id="1_er6cq"]
+[ext_resource type="Texture2D" uid="uid://1oey08pe421i" path="res://Weapons/pistol_single.png" id="2_qv81b"]
+
+[node name="Weapon" type="Node2D" unique_id=215411997]
+script = ExtResource("1_er6cq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1802922514]
+texture = ExtResource("2_qv81b")
+
+[node name="Barrel" type="Marker2D" parent="." unique_id=81837032]
+position = Vector2(20, -2.5)
+
+[node name="EjectionMarker" type="Marker2D" parent="." unique_id=231039009]
+position = Vector2(-5, 0)
