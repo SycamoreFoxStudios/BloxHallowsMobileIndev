@@ -1,13 +1,6 @@
 extends CharacterBody2D
 
-@export var speed : float = 300
-
-@export var joystick_left : VirtualJoystick
-
-@export var joystick_right : VirtualJoystick
-
-var move_vector := Vector2.ZERO
-
+const SPEED = 300.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,13 +13,20 @@ func _process(delta: float) -> void:
 		$Sprite2D.texture = load("res://Player/Player_1.png")
 	if Global.player_skin == "pumpkin":
 		$Sprite2D.texture = load("res://Player/player_pumpkin.png")
-		
-		
-	# Movement code
-	move_vector = Vector2.ZERO
-	move_vector = Input.get_vector("ui_left","ui_right","ui_up","ui_down")
-	position += move_vector * speed * delta
 	
-	# Rotation:
-	if joystick_right and joystick_right.is_pressed:
-		rotation = joystick_right.output.angle()
+	
+	var direction = Input.get_vector("left", "right", "up", "down")
+	if direction:
+		velocity = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.y = move_toward(velocity.y, 0, SPEED)
+	move_and_slide()
+	
+	var lookdirection = Input.get_vector("lookleft", "lookright", "lookup", "lookdown")
+	if lookdirection:
+		rotation = lookdirection.angle()
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.y = move_toward(velocity.y, 0, SPEED)
+	move_and_slide()

@@ -59,3 +59,7 @@ func _on_item_list_item_selected(index: int) -> void:
 		Global.player_skin = "default"
 	if item_name == "Pumpkin":
 		Global.player_skin = "pumpkin"
+
+
+func _on_return_pressed() -> void:
+	MenuScreen = "Play"

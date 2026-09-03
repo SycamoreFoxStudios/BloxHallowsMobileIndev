@@ -271,6 +271,7 @@ item_1/icon = ExtResource("7_8qtwp")
 
 [node name="Rotation Warning" type="PanelContainer" parent="." unique_id=1803810235]
 visible = false
+z_index = 4
 layout_mode = 0
 offset_left = -684.0
 offset_top = -1139.0
@@ -284,7 +285,23 @@ theme_override_font_sizes/font_size = 60
 text = "Please Rotate Your Device"
 horizontal_alignment = 1
 
+[node name="Return" type="Button" parent="." unique_id=2079451572]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 864.0
+offset_right = 310.0
+offset_bottom = 951.0
+rotation = -6.818501e-05
+theme_override_styles/normal = SubResource("StyleBoxFlat_amiut")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_amiut")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_amiut")
+theme_override_styles/hover = SubResource("StyleBoxFlat_amiut")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_amiut")
+theme_override_styles/focus = SubResource("StyleBoxFlat_amiut")
+text = "Return"
+
 [connection signal="button_down" from="Start Game" to="." method="_on_start_game_button_down"]
 [connection signal="button_down" from="Customize" to="." method="_on_customize_button_down"]
 [connection signal="button_down" from="Play" to="." method="_on_play_button_down"]
 [connection signal="item_selected" from="ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]
