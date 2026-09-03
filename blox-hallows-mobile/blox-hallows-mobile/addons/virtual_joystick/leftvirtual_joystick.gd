@@ -1,7 +1,7 @@
 #class_name VirtualJoystick
 
 extends Control
-
+var isitpressed
 ## A simple virtual joystick for touchscreens, with useful options.
 ## Github: https://github.com/MarcoFazioRandom/Virtual-Joystick-Godot
 
@@ -75,7 +75,6 @@ func _ready() -> void:
 	
 	if visibility_mode == Visibility_mode.WHEN_TOUCHED:
 		hide()
-
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
