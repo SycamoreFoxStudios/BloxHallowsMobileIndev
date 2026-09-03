@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://1k2h3o1qufw2"]
 
 [ext_resource type="PackedScene" uid="uid://cc1uop0wrhfix" path="res://Scenes/player.tscn" id="1_hf1ha"]
+[ext_resource type="Script" uid="uid://dt1y52kmk13a6" path="res://Scripts/right_virtual_joystick.gd" id="2_wbxth"]
 
 [node name="Gameplay" type="Node2D" unique_id=1679835419]
 
@@ -38,5 +39,6 @@ action_left = &"lookleft"
 action_right = &"lookright"
 action_up = &"lookup"
 action_down = &"lookdown"
+script = ExtResource("2_wbxth")
 
 [connection signal="pressed" from="CanvasLayer/RightVirtualJoystick" to="Player" method="_on_right_virtual_joystick_pressed"]
